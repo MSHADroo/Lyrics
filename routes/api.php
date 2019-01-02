@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::get('singers', 'SingerController@index');
 Route::get('singers/{id}', 'SingerController@show');
+Route::get('singers/byletter/{char}', 'SingerController@byLetter');
 
 Route::get('lyrics', 'LyricController@index');
 Route::get('lyrics/{id}', 'LyricController@show');

@@ -14,7 +14,16 @@ class SingersTableSeeder extends Seeder
     {
         DB::table('singers')->insert([
             'id' => 1 ,
-            'name' => 'Mohsen Chavoshi',
+            'name' => 'Mohsen',
+            'family' => 'Chavoshi',
+            'picture' => 'nadare',
+            'status' => 'enable',
+        ]);
+
+        DB::table('singers')->insert([
+            'id' => 2 ,
+            'name' => 'Amir Hossein',
+            'family' => 'Hashemi',
             'picture' => 'nadare',
             'status' => 'enable',
         ]);

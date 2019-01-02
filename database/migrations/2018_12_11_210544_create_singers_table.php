@@ -15,7 +15,8 @@ class CreateSingersTable extends Migration
     {
         Schema::create('singers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 100);
+            $table->string('name', 50);
+            $table->string('family', 50);
             $table->string('picture')->nullable();
             $table->enum('status', ['enable', 'disable']);
             $table->timestamps();
